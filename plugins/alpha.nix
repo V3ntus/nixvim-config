@@ -5,8 +5,7 @@
 let
   header = {
     type = "text";
-
-    # Use color defined by catppuccin
+ 
     opts = {
       hl = "AlphaHeader";
       position = "center";
@@ -15,12 +14,14 @@ let
     # Generated from https://www.asciiart.eu/text-to-ascii-art
     # Font used: Graffiti
     val = [
-      "  ________  ____   ____.___   _____   "
-      " /  _____/  \\   \\ /   /|   | /     \\  "
-      "/   \\  ___   \\   Y   / |   |/  \\ /  \\ "
-      "\\    \\_\\  \\   \\     /  |   /    Y    \\"
-      " \\______  / /\\ \\___/   |___\\____|__  /"
-      "        \\/  \\/                     \\/ "
+      "·······················································"
+      ":██╗___██╗██████╗_███╗___██╗████████╗██╗___██╗███████╗:"
+      ":██║___██║╚════██╗████╗__██║╚══██╔══╝██║___██║██╔════╝:"
+      ":██║___██║_█████╔╝██╔██╗_██║___██║___██║___██║███████╗:"
+      ":╚██╗_██╔╝_╚═══██╗██║╚██╗██║___██║___██║___██║╚════██║:"
+      ":_╚████╔╝_██████╔╝██║_╚████║___██║___╚██████╔╝███████║:"
+      ":__╚═══╝__╚═════╝_╚═╝__╚═══╝___╚═╝____╚═════╝_╚══════╝:"
+      "·······················································"
     ];
   };
 
@@ -47,7 +48,6 @@ let
     # https://github.com/goolord/alpha-nvim/blob/main/lua/alpha/fortune.lua
     val.__raw = "require('alpha.fortune')()";
 
-    # Use color defined by catppuccin
     opts = {
       hl = "AlphaFooter";
       position = "center";
@@ -154,22 +154,7 @@ in
           end
         '';
       }
-    ];
-
-    colorschemes.catppuccin.settings = {
-      # Enable catppuccin colors
-      # https://github.com/catppuccin/nvim/blob/main/lua/catppuccin/groups/integrations/alpha.lua
-      integrations.alpha = true;
-
-      # Override default catppuccin header color
-      custom_highlights = ''
-        function(colors)
-          return {
-            AlphaHeader = { fg = colors.red },
-          }
-        end
-      '';
-    };
+    ]; 
 
     keymaps = [
       {

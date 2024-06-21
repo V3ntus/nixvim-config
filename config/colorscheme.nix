@@ -1,13 +1,13 @@
 {
   colorschemes = {
-    catppuccin = {
+    gruvbox = {
       enable = true;
 
       settings = {
-        flavour = "mocha";
+        terminal_colors = true; 
 
         # Needed to keep terminal transparency, if any
-        transparent_background = false;
+        transparent_mode = true;
       };
     };
   };

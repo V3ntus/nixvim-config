@@ -107,8 +107,7 @@
     };
   };
 
-  rootOpts = {
-    colorschemes.catppuccin.settings.integrations.native_lsp.enabled = true;
+  rootOpts = { 
     extraPackages = [ pkgs.go ];
   };
 }

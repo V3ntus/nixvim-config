@@ -195,10 +195,7 @@
     };
   };
 
-  rootOpts = {
-    # Enable catppuccin colors
-    # https://github.com/catppuccin/nvim/blob/main/lua/catppuccin/groups/integrations/neotree.lua
-    colorschemes.catppuccin.settings.integrations.neotree = true;
+  rootOpts = { 
     autoGroups.neotree = { };
 
     # Custom autocommands (taken from AstroNvim)

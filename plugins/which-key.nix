@@ -29,8 +29,4 @@
       "<leader>u".name = "${icons.Window} UI/UX";
     };
   };
-
-  # Enable catppuccin colors
-  # https://github.com/catppuccin/nvim/blob/main/lua/catppuccin/groups/integrations/which_key.lua
-  rootOpts.colorschemes.catppuccin.settings.integrations.which_key = true;
 }
