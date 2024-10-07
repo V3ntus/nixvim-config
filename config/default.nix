@@ -23,6 +23,7 @@
     ./languages/treesitter/treesitter-textobjects.nix # Syntax-aware text-objects
     ./languages/treesitter/treesitter.nix
     ./languages/nvim-lint.nix # Async linter for nvim
+    ./languages/rustaceanvim.nix # Better rust nvim experience
 
     # Lazy plugin manager
     ./lazy/lazy.nix
