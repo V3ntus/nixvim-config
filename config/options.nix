@@ -137,7 +137,11 @@
         g.neovide_cursor_vfx_particle_lifetime = 5.0
         g.neovide_cursor_vfx_particle_density = 14.0
         g.neovide_cursor_vfx_particle_speed = 12.0
-        g.neovide_transparency = 0.8
+        g.neovide_transparency = 0.95
+        g.neovide_window_blurred = true
+        g.neovide_floating_blur_amount_x = 4.0
+        g.neovide_floating_blur_amount_y = 4.0
+        g.neovide_confirm_quit = true
 
         -- Neovide Fonts
         -- o.guifont = "MonoLisa Trial:Medium:h15"
