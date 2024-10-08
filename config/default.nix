@@ -1,6 +1,7 @@
 {
   imports = [
     ./keymaps.nix
+    ./options.nix
 
     # Bufferline plugins
     ./bufferlines/bufferline.nix # Snazzy bufferline for Nvim

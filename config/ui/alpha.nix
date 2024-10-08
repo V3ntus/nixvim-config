@@ -45,7 +45,7 @@
             }
           ];
           shortcut = "f";
-          position = "left";
+          position = "center";
           cursor = 3;
           width = 38;
           align_shortcut = "right";
