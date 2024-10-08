@@ -35,6 +35,9 @@
     ./lsp/lsp.nix # Built-in LSP configuration
     ./lsp/lspsaga.nix # Enhanced LSP experience
 
+    # Code snippets
+    ./snippets/luasnip.nix
+
     # Statusline mods
     ./statusline/lualine.nix # Statusline configurator
 

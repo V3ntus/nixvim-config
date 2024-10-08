@@ -2,6 +2,7 @@
   plugins = {
     cmp-nvim-lsp = {enable = true;}; # nvim lsp
     cmp-buffer = {enable = true;}; # Scan buffer on open
+    cmp_luasnip = {enable = true;};
     copilot-cmp = {enable = true;}; # Github Copilot suggestions in cmp
     cmp-path = {enable = true;}; # resolve file system paths in cmp
     cmp = {
@@ -39,6 +40,41 @@
                   fallback()
                 end
               end, {"i","s","c",}),
+
+              -- Luasnip mappings
+              ['<CR>'] = cmp.mapping(function(fallback)
+                  if cmp.visible() then
+                      if luasnip.expandable() then
+                          luasnip.expand()
+                      else
+                          cmp.confirm({
+                              select = true,
+                          })
+                      end
+                  else
+                      fallback()
+                  end
+              end),
+
+              ["<Tab>"] = cmp.mapping(function(fallback)
+                if cmp.visible() then
+                  cmp.select_next_item()
+                elseif luasnip.locally_jumpable(1) then
+                  luasnip.jump(1)
+                else
+                  fallback()
+                end
+              end, { "i", "s" }),
+
+              ["<S-Tab>"] = cmp.mapping(function(fallback)
+                if cmp.visible() then
+                  cmp.select_prev_item()
+                elseif luasnip.locally_jumpable(-1) then
+                  luasnip.jump(-1)
+                else
+                  fallback()
+                end
+              end, { "i", "s" }),
             })
           '';
         };
@@ -78,6 +114,8 @@
     };
   };
   extraConfigLua = ''
+    luasnip = require("luasnip")
+
     kind_icons = {
       Text = "󰊄",
       Method = "",
