@@ -9,7 +9,7 @@
         };
 
         # Nix
-        nil-ls = {
+        nil_ls = {
           enable = true;
         };
 
