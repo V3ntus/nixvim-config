@@ -11,7 +11,6 @@
 
     # Nvim completion plugins
     ./completion/cmp.nix # Completion engine plugin
-    ./completion/copilot.nix # Copilot completion source
     ./completion/lspkind.nix # vscode-like pictograms for built-in lsp
 
     # Git plugins

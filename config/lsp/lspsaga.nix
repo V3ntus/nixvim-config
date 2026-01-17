@@ -1,61 +1,63 @@
 {
   plugins.lspsaga = {
     enable = true;
-    beacon = {
-      enable = true;
-    };
-    ui = {
-      border = "shadow";
-      codeAction = "💡";
-    };
-    hover = {
-      openCmd = "!xdg-open";
-    };
-    diagnostic = {
-      borderFollow = true;
-      diagnosticOnlyCurrent = false;
-      showCodeAction = true;
-    };
-    symbolInWinbar = {
-      enable = true; # Breadcrumbs
-      showFile = false;
-    };
-    codeAction = {
-      extendGitSigns = true;
-      showServerName = true;
-      onlyInCursor = true;
-      numShortcut = true;
-      keys = {
-        exec = "<CR>";
-        quit = ["<Esc>" "q"];
+    settings = {
+      beacon = {
+        enable = true;
       };
-    };
-    lightbulb = {
-      enable = true; # Disable?
-      sign = true;
-      virtualText = true;
-    };
-    implement = {
-      enable = true;
-    };
-    rename = {
-      autoSave = false;
-      keys = {
-        exec = "<CR>";
-        quit = ["<C-k>" "<Esc>"];
-        select = "x";
+      ui = {
+        border = "shadow";
+        codeAction = "💡";
       };
-    };
-    outline = {
-      autoClose = true;
-      autoPreview = true;
-      closeAfterJump = false;
-      layout = "normal";
-      winPosition = "right";
-      keys = {
-        jump = "e";
-        quit = "q";
-        toggleOrJump = "o";
+      hover = {
+        openCmd = "!xdg-open";
+      };
+      diagnostic = {
+        borderFollow = true;
+        diagnosticOnlyCurrent = false;
+        showCodeAction = true;
+      };
+      symbolInWinbar = {
+        enable = true; # Breadcrumbs
+        showFile = false;
+      };
+      codeAction = {
+        extendGitSigns = true;
+        showServerName = true;
+        onlyInCursor = true;
+        numShortcut = true;
+        keys = {
+          exec = "<CR>";
+          quit = ["<Esc>" "q"];
+        };
+      };
+      lightbulb = {
+        enable = true; # Disable?
+        sign = true;
+        virtualText = true;
+      };
+      implement = {
+        enable = true;
+      };
+      rename = {
+        autoSave = false;
+        keys = {
+          exec = "<CR>";
+          quit = ["<C-k>" "<Esc>"];
+          select = "x";
+        };
+      };
+      outline = {
+        autoClose = true;
+        autoPreview = true;
+        closeAfterJump = false;
+        layout = "normal";
+        winPosition = "right";
+        keys = {
+          jump = "e";
+          quit = "q";
+          toggleOrJump = "o";
+        };
       };
     };
   };
