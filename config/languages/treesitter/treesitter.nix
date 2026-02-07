@@ -6,7 +6,7 @@
         enable = true;
       };
     };
-    folding = false;
+    folding.enable = false;
     nixvimInjections = true;
   };
 }
